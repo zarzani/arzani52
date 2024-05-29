@@ -20,10 +20,10 @@ h1 {
     color: rgb(43, 226, 113);
 
   }
-  .Weather .unit {
+  .weather .unit {
     color: rgb(182, 22, 22);
-    font-size: 40px;
-font-weight: bold;
+    font-size: 16px;
+    font-weight:bold
     position: relative;
     line-height: 1;
     top: -34px;
