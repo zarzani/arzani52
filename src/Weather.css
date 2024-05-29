@@ -12,3 +12,19 @@ h1 {
     border-radius: 10px;
     color: rgb(59, 34, 148);
   }
+  .weather .temperature {
+    font-size: 44px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    color: rgb(43, 226, 113);
+
+  }
+  .Weather .unit {
+    color: rgb(182, 22, 22);
+    font-size: 40px;
+font-weight: bold;
+    position: relative;
+    line-height: 1;
+    top: -34px;
+  }

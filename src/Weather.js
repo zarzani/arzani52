@@ -25,7 +25,8 @@ export default function Weather() {
         <div className="row">
             <div className="col-6">
                 <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Mostly sunny"  />
-                83  °F °C
+                <span className="temperature" >83 </span>  
+                <span className="unit" >°F °C</span>
             </div>
             <div className="col-6">
                 <ul>
