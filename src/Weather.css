@@ -1,3 +1,14 @@
 h1 {
-    color: brown;
+    color: rgb(165, 42, 52);
+    font-size: 24px;
+    font-weight: 100;
+    margin: 20px 0 0 0;
 }
+
+.weather {
+    font-family: arial, sans-serif;
+    border: 1px solid #25a96e;
+    padding: 16px;
+    border-radius: 10px;
+    color: rgb(59, 34, 148);
+  }
