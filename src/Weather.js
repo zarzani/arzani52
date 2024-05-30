@@ -36,7 +36,7 @@ export default function Weather() {
             <h1> {weatherData.city} </h1>
             <ul>
                 <li>
-                     07.00
+                    07.00
                 </li>
                 <li> {weatherData.description} </li>
             </ul>
