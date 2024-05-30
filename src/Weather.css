@@ -23,7 +23,7 @@ h1 {
   .weather .unit {
     color: rgb(182, 22, 22);
     font-size: 16px;
-    font-weight:bold
+    font-weight:bold;
     position: relative;
     line-height: 1;
     top: -34px;
