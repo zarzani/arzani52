@@ -3,9 +3,12 @@ import axios from "axios";
 import "./Weather.css";
 import FormattedDate from "./FormattedDate";
 
-export default function Weather() {
+export default function Weather(props) {
     const [ready, setReady] = useState (false);
     const [weatherData, setWeatherData] = useState({ });
+    const [city, setCity] = useState (props.city);
+
+    
     function  handleResponse (response) {
         console.log(response.data);
         
@@ -20,13 +23,31 @@ export default function Weather() {
             city: response.data.name,
         });
     }
+    function handleSubmit(event) {
+        event.preventDefault();
+        console.log('handleSubmit triggered');
+        search();
+      }
+    
+      function handleCityChange(event) {
+        setCity(event.target.value);
+      }
+    
+      function search() {
+        let apiKey = "866a208a73eeff02182218e9441647a1";
+      let city = " New york";
+      let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+      axios.get(apiUrl).then(handleResponse);
+    }  
+
     if(ready) {
         return (
             <div className="weather"> 
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div className="row" >
                     <div className="col-6">
-                        <input type="search" placeholder="Enter city.." className="form-control" />
+                        <input type="search" placeholder="Enter city.." className="form-control" autoFocus="on"
+                onChange={handleCityChange} />
                         </div>
                         <div className="col-6">
                         <input type="submit" value="search" className="btn btn-primary" /> 
@@ -59,12 +80,8 @@ export default function Weather() {
             </div> )
 
 } else { 
-    let apiKey = "866a208a73eeff02182218e9441647a1";
-    let city = " New york";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
-
-    
+   
+    search();
 return ("loading"); }
    
         }
