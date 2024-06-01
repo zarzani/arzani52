@@ -35,7 +35,7 @@ export default function Weather(props) {
     
       function search() {
         let apiKey = "866a208a73eeff02182218e9441647a1";
-      let city = " New york";
+    
       let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
       axios.get(apiUrl).then(handleResponse);
     }  
@@ -64,7 +64,7 @@ export default function Weather(props) {
             </ul>
             <div className="row">
                 <div className="col-6">
-                    <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Mostly sunny"  />
+                    <img src= "https://openweathermap.org/img/wn/10d@2x.png" alt="Mostly sunny"  />
                     <span className="temperature" >{weatherData.temperature} </span>  
                     <span className="unit" >°F °C</span>
                 </div>
