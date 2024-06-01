@@ -64,7 +64,7 @@ export default function Weather(props) {
             </ul>
             <div className="row">
                 <div className="col-6">
-                    <img src= "https://openweathermap.org/img/wn/10d@2x.png" alt="Mostly sunny"  />
+                    <img src= "https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png"  alt="Mostly sunny"  />
                     <span className="temperature" >{weatherData.temperature} </span>  
                     <span className="unit" >°F °C</span>
                 </div>
