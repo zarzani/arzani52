@@ -5,7 +5,7 @@ export default function WeatherTemperature(props) {
   function showFahrenheit(event) {
     event.preventDefault();
     setUnit("fahrenheit");
-  }
+  } 
 
   function showCelsius(event) {
     event.preventDefault();
