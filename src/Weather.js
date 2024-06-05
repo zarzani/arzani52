@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Weather.css";
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
+import WeatherForcast from "./WeatherForcast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -77,7 +78,12 @@ export default function Weather(props) {
               <li> Humidity: {weatherData.humidity} % </li>
               <li> Wind: {weatherData.wind} mph</li>
             </ul>
+
+            
           </div>
+          <span> 
+          <WeatherForcast />
+          </span>
         </div>
       </div>
     );
