@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import WeatherForcast from "./WeatherForcast";
+
 
 export default function WeatherTemperature(props) {
   const [unit, setUnit] = useState("celsius");
@@ -36,7 +36,7 @@ export default function WeatherTemperature(props) {
           </a>{" "}
           | °F
         </span>
-        < WeatherForcast />
+       
       </div>
        
     

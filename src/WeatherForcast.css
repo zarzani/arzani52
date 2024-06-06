@@ -1,3 +1,8 @@
-WeatherForcast {
-    color: brown;
+.WeatherForcast {
+    color:rgb(52, 3, 3);
+    text-align: center;
+}
+.WeatherForecast-temperature-max {
+    font-weight: bold;
+    margin-right: 10px;
 }
