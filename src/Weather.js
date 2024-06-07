@@ -4,6 +4,7 @@ import "./Weather.css";
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
 import WeatherForcast from "./WeatherForcast";
+import WeatherIcon from "./WeatherIcon";
 
 
 export default function Weather(props) {
@@ -68,10 +69,10 @@ export default function Weather(props) {
         </ul>
         <div className="row">
           <div className="col-6">
-            <img
-              src={`https://openweathermap.org/img/wn/${weatherData.icon}@2x.png`}
-              alt="Mostly sunny"
-            />
+          <div className="float-left">
+              <WeatherIcon code={props.data.icon} size={52} />
+            </div>
+           
 
             <WeatherTemperature celsius={weatherData.temperature} />
           </div>
