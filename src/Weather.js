@@ -70,7 +70,7 @@ export default function Weather(props) {
         <div className="row">
           <div className="col-6">
           <div className="float-left">
-              <WeatherIcon code={props.data.icon} size={52} />
+              <WeatherIcon code={weatherData.icon} size={52} />
             </div>
            
 
