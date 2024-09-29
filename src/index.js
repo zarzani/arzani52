@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Hello from './Hello';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,7 +12,7 @@ root.render(
     <App />
     <div>
       <h1> Zahra Arzani</h1>
-
+      <Hello name="zahra"/>
       
     </div>
   </React.StrictMode>
